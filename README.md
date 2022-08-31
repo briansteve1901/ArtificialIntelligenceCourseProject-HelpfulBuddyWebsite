@@ -20,11 +20,11 @@ Other: Google Firebase
 
 Project Creators:
 
-2440085184 - Syahrel Akhyar 
-2440105135 - Reyvano Ahsan
-2440106030 - Brian Steve                        
-2440112172 - Julian Jearsen 
-2440114070 - Affan Djafar           
+1. 2440085184 - Syahrel Akhyar 
+2. 2440105135 - Reyvano Ahsan
+3. 2440106030 - Brian Steve                        
+4. 2440112172 - Julian Jearsen 
+5. 2440114070 - Affan Djafar           
 
 Project GitHub Link: https://bit.ly/3AyEgTm
 
