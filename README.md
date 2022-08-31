@@ -8,7 +8,7 @@ citizens want to know the current time in a fast way. The challenge was we didnâ
 people faced in their life. We shared questionnaires with people and found the problem. Very happy that we have 
 successfully created this website and scored 87 out of 100 for this project. 
 
-Software: Visual Studio Code
+Code Editor: Visual Studio Code
 
 Language: HTML, CSS, and JavaScript
 
