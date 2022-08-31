@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helpful Buddy</title>  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="homestyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allison&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar fixed-top navbar-expand-lg" id="navbar-color">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html" id="logo">Helpful Buddy</a>
+      </div>
+    </nav>
+
+    <div class="first-content">
+      <h1>Welcome to Helpful Buddy!!</h1>
+    </div>
+
+    <div class="second-content">
+      <h1>About Us</h1>
+      <br>
+      <p>Helpful Buddy is your personal voice assistant with 2 features.</p>
+      <p>Helpful Buddy can play your favourite song and tell you time!</p>
+      <button id="second-content-button" onclick="recognition.start()">Speak Now</button>
+      <br>
+      <p id="result"></p>
+    </div>
+
+    <div class="third-content">
+      <h1>HOW TO USE</h1>
+      <br>
+      <h4>Tell Your Favourite Song to be Played</h4>
+      <p id="third-content-first-paragraph">Do you feel boring or lonely? Just press Speak Now Button 
+      <br> and tell your favourite song to be played by saying "Play (The Song Name)
+      <br> (The Song Singer) or just say "Play (The Song Name)".
+      <br> Helpful Buddy will perfectly open YouTube and play your 
+      <br> favourite song.</p>
+      <button id="third-content-first-button">Click Here</button>
+      <br> <br>
+      <h4>Ask the Time</h4>
+      <p id="third-content-second-paragraph">Do you want to know current time? Just press Speak
+      <br> Now Button and ask "What time is it?" to Helpful Buddy.
+      <br> Helpful Buddy will perfectly tell the current time!</p>
+      <button id="third-content-second-button">Click Here</button>
+    </div>
+     
+    <div class="contact-form">
+      <h4>Have any inquiries? Feel free to contact us by filling the form below!</h4>
+      <br>
+      <div class="mb-3">
+        <label for="Name" id="name">Full Name</label>
+        <input
+          type="text"
+          name="Full Name"
+          class="form-control"
+          id="userFullName"
+          placeholder="Your Name (must be filled)"
+          required
+        />
+        <div class="mt-1 error-message" id="first-error-message"></div>
+      </div>
+      <div class="mb-3">
+        <form action="">
+          <label for="Email" id="email">Email</label>
+          <input
+            type="Email"
+            name="Email"
+            class="form-control"
+            id="userEmail"
+            placeholder="Your Email (must be filled and include @)"
+            required
+          />
+        </form>
+        <div class="mt-1 error-message" id="second-error-message"></div>
+      </div>
+      <div class="mb-3">
+        <label for="PhoneNumber" id="phone-number">Phone Number</label>
+        <input
+          type="text"
+          name="Phone Number"
+          class="form-control"
+          id="userPhoneNumber"
+          placeholder="Your Phone Number (Phone number must be filled, the first digit is 0, the second digit is 8, and no more than 14 digits)"
+          required
+        />
+        <div class="mt-1 error-message" id="third-error-message"></div>
+      </div>
+      <div class="mb-3">
+        <label for="Comments" id="comments">Comments</label>
+        <textarea name="Comments" class="form-control" id="userComments" rows="10" placeholder="Your Comments (Comments must be in the range of 5 words to 100 words)" required></textarea>
+        <div class="mt-1 error-message" id="fourth-error-message"></div>
+      </div>
+      <button class="btn btn-primary" id="Submit">Submit</button>
+      <div id="successAlert" class="d-none alert alert-success" role="alert">
+        Successfully Submitted!
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-images">
+        <div class="dribble">
+          <a href="https://dribbble.com/briansteve1901" target="_blank">
+            <img src="footer_images/dribble.png" height="35" width="35" alt="Image Not Loaded">
+          </a>
+        </div>
+        <div class="github">
+          <a href="https://github.com/briansteve1901" target="_blank">
+            <img src="footer_images/github.png" height="35" width="35" alt="Image Not Loaded">
+          </a>
+        </div>
+        <div class="gmail">
+          <a href="mailto: brians1901@gmail.com" target="_blank">
+            <img src="footer_images/gmail.png" height="35" width="35" alt="Image Not Loaded">
+          </a>
+        </div>
+        <div class="instagram">
+          <a href="https://instagram.com/briansteve1901" target="_blank">
+            <img src="footer_images/instagram.png" height="35" width="35" alt="Image Not Loaded">
+          </a>
+        </div>
+        <div class="linkedin">
+          <a href="https://www.linkedin.com/in/brian-steve-b2aa24202/" target="_blank">
+            <img src="footer_images/linkedin.png" height="35" width="35" alt="Image Not Loaded">
+          </a>
+        </div>
+        <div class="youtube">
+          <a href="https://discord.com/users/838988983249666088" target="_blank">
+            <img src="footer_images/youtube.png" height="35" width="35" alt="Image Not Loaded">
+          </a>
+        </div>
+      </div>
+      <div id="copyright">
+        Copyright, Helpful Buddy 2022
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
+    <script src="style.js"></script>
+
+    <script>
+      $(document).ready(()=>{
+        $("#third-content-first-button").click(()=>{
+          $("#third-content-first-paragraph").toggle(2000);
+        });
+      });
+      $(document).ready(()=>{
+        $("#third-content-second-button").click(()=>{
+          $("#third-content-second-paragraph").toggle(2000);
+        });
+      });
+    </script>
+  </body>
+</html>

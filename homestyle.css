@@ -1,0 +1,575 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Balsamiq Sans', cursive;
+    color: black;
+    font-weight: bold;
+}
+
+#navbar-color {
+    background-color: rgba(0, 0, 0, 87%);
+    border-bottom: 5px solid red;
+}
+
+#logo {
+    font-size: 3rem;
+    font-family: 'Allison', cursive;
+	color: white;
+}
+
+.first-content {
+    padding: 9rem 0rem 2rem 0rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.first-content h1 {
+    color: red;
+    animation: Konten1 2s;
+}
+
+#second-content-button {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    width: 8rem;
+    height: 4rem;
+    border-radius: 25%;
+    background-color: red;
+    border: none;
+    color: white;
+}
+
+.second-content {
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 87%);
+    padding: 3rem 3rem 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.second-content h1 {
+    padding-bottom: 0.5rem;
+    color: white;
+    border-bottom: 5px red solid;
+    text-align: center;
+    text-transform: uppercase;
+    animation: Konten2 2s;
+}
+
+.second-content p {
+    color: white;
+    font-size: 1.2rem;
+    animation: Konten2 2s;
+    text-align: center;
+}
+
+.third-content {
+    padding: 3rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.third-content h1 {
+    padding-bottom: 0.5rem;
+    color: black;
+    border-bottom: 5px solid red;
+    text-align: center;
+    text-transform: uppercase;
+    animation: Konten2 2s;
+    margin-bottom: 0rem;
+}
+
+h4 {
+    font-style: italic;
+}
+
+.third-content p {
+    font-size: 1.2rem;
+    display: none;
+    color: black;
+}
+
+#third-content-first-button, #third-content-second-button {
+    background-color: red;
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    color: white;
+}
+
+.contact-form {
+    animation: Form 1.5s ease-in;
+    background-color: rgba(0, 0, 0, 87%);
+    padding: 4rem 20rem 4rem 3rem;
+    animation: Form 2s;
+}
+
+.contact-form h4 {
+    color: white;
+    border-bottom: 5px solid red;
+}
+
+#name, #email, #phone-number, #comments {
+    font-size: 1.1rem;
+    color: white;
+}
+
+#first-error-message, #second-error-message, #third-error-message, #fourth-error-message {
+    color: red;
+    font-size: 1.2rem;
+}
+
+#Submit {
+    background-color: red;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: none;
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 87%);
+}
+
+.footer-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#copyright {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    color: white;
+}
+
+.dribble, .github, .gmail, .instagram, .linkedin {
+    padding-right: 1rem;
+}
+
+.dribble, .github, .gmail, .instagram, .linkedin, .youtube {
+    padding-top: 1rem;
+}
+
+@keyframes Konten1{
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes Konten2{
+    0%{
+        opacity: 0;
+        transform: rotate(0deg);
+    }
+    100%{
+        opacity: 1;
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes Form{
+    0%{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@media only screen and (min-width:992px){
+    .navbar {
+        height: 100px;
+    }    
+}
+
+@media only screen and (max-width:991px){
+    #nav-item-link {
+        font-size: 1.15rem;
+        color: white;
+    }
+
+    #logo {
+        font-size: 2.75rem;
+        font-family: 'Allison', cursive;
+        color: white;
+    }
+
+    .first-content {
+        padding: 9rem 0rem 2rem 0rem;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .first-content h1 {
+        color: red;
+        animation: Konten1 2s;
+        font-size: 1.9rem;
+    }
+    
+    #second-content-button {
+        font-size: 1.15rem;
+        margin-top: 0.5rem;
+        width: 7rem;
+        height: 3.5rem;
+        border-radius: 25%;
+        background-color: red;
+        border: none;
+        color: white;
+    }
+    
+    .second-content {
+        box-sizing: border-box;
+        background-color: rgba(0, 0, 0, 87%);
+        padding: 3rem 3rem 1rem 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .second-content h1 {
+        padding-bottom: 0.5rem;
+        color: white;
+        border-bottom: 5px red solid;
+        text-align: center;
+        text-transform: uppercase;
+        animation: Konten2 2s;
+        font-size: 1.9rem;
+    }
+    
+    .second-content p {
+        color: white;
+        font-size: 1.15rem;
+        animation: Konten2 2s;
+        text-align: center;
+    }
+    
+    .third-content {
+        padding: 3rem 0rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .third-content h1 {
+        padding-bottom: 0.5rem;
+        color: white;
+        border-bottom: 5px solid red;
+        text-align: center;
+        text-transform: uppercase;
+        animation: Konten2 2s;
+        color: black;
+        font-size: 1.9rem;
+    }
+
+    h4 {
+        font-style: italic;
+    }
+    
+    .third-content p {
+        font-size: 1.15rem;
+        display: none;
+        color: black;
+        text-align: center;
+    }
+    
+    #third-content-first-button, #third-content-second-button {
+        background-color: red;
+        padding: 0.25rem;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+    }   
+
+    .contact-form {
+        padding: 4rem 12rem 4rem 2rem;
+    }
+    
+    #name, #email, #phone-number, #comments {
+        font-size: 1.15rem;
+    }
+    
+    #first-error-message, #second-error-message, #third-error-message, #fourth-error-message {
+        color: red;
+        font-size: 1.15rem;
+    }
+    
+    #Submit {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }   
+
+    #copyright {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-size: 1.15rem;
+        text-align: center;
+    }
+
+    #footer-images img {
+        width: 33px;
+        height: 33px;
+    }
+
+}
+
+@media only screen and (max-width:850px){
+    #nav-item-link {
+        font-size: 1.10rem;
+        color: white;
+    }
+
+    #logo {
+        font-size: 2.7rem;
+        font-family: 'Allison', cursive;
+        color: white;
+    }
+
+    .first-content {
+        padding: 9rem 0rem 2rem 0rem;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .first-content h1 {
+        color: red;
+        animation: Konten1 2s;
+        font-size: 1.8rem;
+    }
+    
+    #second-content-button {
+        font-size: 1.1rem;
+        margin-top: 0.5rem;
+        width: 7rem;
+        height: 3rem;
+        border-radius: 25%;
+        background-color: red;
+    }
+    
+    .second-content {
+        box-sizing: border-box;
+        background-color: rgba(0, 0, 0, 87%);
+        padding: 3rem 3rem 1rem 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .second-content h1 {
+        padding-bottom: 0.5rem;
+        color: white;
+        border-bottom: 5px solid red;
+        text-align: center;
+        text-transform: uppercase;
+        animation: Konten2 2s;
+        font-size: 1.8rem;
+    }
+    
+    .second-content p {
+        color: white;
+        font-size: 1.1rem;
+        animation: Konten2 2s;
+        text-align: center;
+    }
+    
+    .third-content {
+        padding: 3rem 0rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .third-content h1 {
+        padding-bottom: 0.5rem;
+        color: black;
+        border-bottom: 5px solid red;
+        text-align: center;
+        text-transform: uppercase;
+        animation: Konten2 2s;
+        font-size: 1.8rem;
+    }
+
+    h4 {
+        font-style: italic;
+    }
+    
+    .third-content p {
+        font-size: 1.1rem;
+        display: none;
+        color: black;
+        text-align: center;
+    }
+    
+    #third-content-first-button, #third-content-second-button {
+        background-color: red;
+        padding: 0.25rem;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+    }
+    
+    .contact-form {
+        padding: 3rem 8rem 3rem 2rem;
+    }
+    
+    #name, #email, #phonenumber, #comments {
+        font-size: 1.1rem;
+    }
+    
+    #first-error-message, #second-error-message, #third-error-message, #fourth-error-message {
+        color: red;
+        font-size: 1.1rem;
+    }
+    
+    #Submit {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }  
+
+    #copyright {
+        padding-top: 1rem;
+        padding-bottom: 1.5rem;
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    #footer-images img{
+        width: 31px;
+        height: 31px;
+    }
+
+} 
+
+@media only screen and (max-width:600px){
+    #nav-item-link {
+        font-size: 1.10rem;
+        color: white;
+    }
+
+    #logo {
+        font-size: 2.6rem;
+        font-family: 'Allison', cursive;
+        color: white;
+    }
+
+    .first-content {
+        padding: 8rem 0rem 1.5rem 0rem;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .first-content h1 {
+        color: red;
+        animation: Konten1 2s;
+        font-size: 1.7rem;
+    }
+    
+    .second-content button {
+        font-size: 1.05rem;
+        margin-top: 0.5rem;
+        width: 6rem;
+        height: 3rem;
+        border-radius: 25%;
+        background-color: red;
+    }
+    
+    .second-content {
+        box-sizing: border-box;
+        background-color: rgba(0, 0, 0, 87%);
+        padding: 2.5rem 3rem 0.5rem 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .second-content h1 {
+        padding-bottom: 0.5rem;
+        color: white;
+        border-bottom: 5px solid red;
+        text-align: center;
+        text-transform: uppercase;
+        animation: Konten2 2s;
+        font-size: 1.7rem;
+    }
+    
+    .second-content p {
+        color: white;
+        font-size: 1.05rem;
+        animation: Konten2 2s;
+        text-align: center;
+    }
+    
+    .third-content {
+        padding: 2.5rem 0rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .third-content h1 {
+        padding-bottom: 0.5rem;
+        color: black;
+        border-bottom: 5px solid red;
+        text-align: center;
+        text-transform: uppercase;
+        animation: Konten2 2s;
+        font-size: 1.7rem;
+    }
+
+    h4 {
+        font-style: italic;
+    }
+    
+    .third-content p {
+        font-size: 1.105rem;
+        display: none;
+        color: black;
+        text-align: center;
+    }
+    
+    #third-content-first-button, #third-content-second-button {
+        background-color: red;
+        padding: 0.25rem;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .contact-form {
+        padding: 2rem 3rem 2rem 1rem;
+    }
+    
+    #name, #email, #phonenumber, #comments {
+        font-size: 1.05rem;
+    }
+    
+    #first-error-message, #second-error-message, #third-error-message, #fourth-error-message {
+        color: red;
+        font-size: 1.05rem;
+    }
+    
+    #Submit {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }  
+
+    #copyright {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    #footer-images img {
+        width: 30px;
+        height: 30px;
+    }
+}  
