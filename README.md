@@ -30,7 +30,5 @@ Project GitHub Link: https://bit.ly/3AyEgTm
 
 Project Documentation Link: https://bit.ly/3R7MlVH
 
-Project Explanation Video Link: https://bit.ly/3wHN7AO
-
 If you have any questions, suggestions, or comments related to this project, you can contact me through my email: 
 brians1901@gmail.com. Thank you for visiting and seeing this project!
